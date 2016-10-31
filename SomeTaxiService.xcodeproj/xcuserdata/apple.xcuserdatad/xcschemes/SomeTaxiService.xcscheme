@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1869B9C61DC4A2AF0044694D"
-               BuildableName = "29oct&apos;16_pageviews_andbars.app"
-               BlueprintName = "29oct&apos;16_pageviews_andbars"
-               ReferencedContainer = "container:29oct&apos;16_pageviews_andbars.xcodeproj">
+               BuildableName = "SomeTaxiService.app"
+               BlueprintName = "SomeTaxiService"
+               ReferencedContainer = "container:SomeTaxiService.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1869B9DA1DC4A2B00044694D"
-               BuildableName = "29oct&apos;16_pageviews_andbarsTests.xctest"
-               BlueprintName = "29oct&apos;16_pageviews_andbarsTests"
-               ReferencedContainer = "container:29oct&apos;16_pageviews_andbars.xcodeproj">
+               BuildableName = "SomeTaxiService.xctest"
+               BlueprintName = "SomeTaxiServiceTests"
+               ReferencedContainer = "container:SomeTaxiService.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1869B9E51DC4A2B00044694D"
-               BuildableName = "29oct&apos;16_pageviews_andbarsUITests.xctest"
-               BlueprintName = "29oct&apos;16_pageviews_andbarsUITests"
-               ReferencedContainer = "container:29oct&apos;16_pageviews_andbars.xcodeproj">
+               BuildableName = "SomeTaxiService.xctest"
+               BlueprintName = "SomeTaxiServiceUITests"
+               ReferencedContainer = "container:SomeTaxiService.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1869B9C61DC4A2AF0044694D"
-            BuildableName = "29oct&apos;16_pageviews_andbars.app"
-            BlueprintName = "29oct&apos;16_pageviews_andbars"
-            ReferencedContainer = "container:29oct&apos;16_pageviews_andbars.xcodeproj">
+            BuildableName = "SomeTaxiService.app"
+            BlueprintName = "SomeTaxiService"
+            ReferencedContainer = "container:SomeTaxiService.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1869B9C61DC4A2AF0044694D"
-            BuildableName = "29oct&apos;16_pageviews_andbars.app"
-            BlueprintName = "29oct&apos;16_pageviews_andbars"
-            ReferencedContainer = "container:29oct&apos;16_pageviews_andbars.xcodeproj">
+            BuildableName = "SomeTaxiService.app"
+            BlueprintName = "SomeTaxiService"
+            ReferencedContainer = "container:SomeTaxiService.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1869B9C61DC4A2AF0044694D"
-            BuildableName = "29oct&apos;16_pageviews_andbars.app"
-            BlueprintName = "29oct&apos;16_pageviews_andbars"
-            ReferencedContainer = "container:29oct&apos;16_pageviews_andbars.xcodeproj">
+            BuildableName = "SomeTaxiService.app"
+            BlueprintName = "SomeTaxiService"
+            ReferencedContainer = "container:SomeTaxiService.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
