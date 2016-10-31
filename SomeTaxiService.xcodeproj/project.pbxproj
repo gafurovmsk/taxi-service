@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1869B9CB1DC4A2AF0044694D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869B9CA1DC4A2AF0044694D /* AppDelegate.swift */; };
-		1869B9CD1DC4A2AF0044694D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869B9CC1DC4A2AF0044694D /* ViewController.swift */; };
 		1869B9D01DC4A2AF0044694D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1869B9CE1DC4A2AF0044694D /* Main.storyboard */; };
 		1869B9D21DC4A2B00044694D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1869B9D11DC4A2B00044694D /* Assets.xcassets */; };
 		1869B9D51DC4A2B00044694D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1869B9D31DC4A2B00044694D /* LaunchScreen.storyboard */; };
-		1869B9E01DC4A2B00044694D /* _9oct_16_pageviews_andbarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869B9DF1DC4A2B00044694D /* _9oct_16_pageviews_andbarsTests.swift */; };
-		1869B9EB1DC4A2B00044694D /* _9oct_16_pageviews_andbarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869B9EA1DC4A2B00044694D /* _9oct_16_pageviews_andbarsUITests.swift */; };
+		1869B9E01DC4A2B00044694D /* SomeTaxiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869B9DF1DC4A2B00044694D /* SomeTaxiServiceTests.swift */; };
+		1869B9EB1DC4A2B00044694D /* SomeTaxiServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869B9EA1DC4A2B00044694D /* SomeTaxiServiceUITests.swift */; };
+		1869B9F91DC66FB70044694D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869B9F81DC66FB70044694D /* TableViewController.swift */; };
+		1869B9FB1DC6705C0044694D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869B9FA1DC6705C0044694D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,31 +23,32 @@
 			containerPortal = 1869B9BF1DC4A2AF0044694D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1869B9C61DC4A2AF0044694D;
-			remoteInfo = "29oct'16_pageviews_andbars";
+			remoteInfo = "29oct\'16_pageviews_andbars";
 		};
 		1869B9E71DC4A2B00044694D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1869B9BF1DC4A2AF0044694D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1869B9C61DC4A2AF0044694D;
-			remoteInfo = "29oct'16_pageviews_andbars";
+			remoteInfo = "29oct\'16_pageviews_andbars";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1869B9C71DC4A2AF0044694D /* 29oct'16_pageviews_andbars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29oct'16_pageviews_andbars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1869B9CA1DC4A2AF0044694D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1869B9CC1DC4A2AF0044694D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1869B9CF1DC4A2AF0044694D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1869B9D11DC4A2B00044694D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1869B9D41DC4A2B00044694D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1869B9D61DC4A2B00044694D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1869B9DB1DC4A2B00044694D /* 29oct'16_pageviews_andbarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "29oct'16_pageviews_andbarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1869B9DF1DC4A2B00044694D /* _9oct_16_pageviews_andbarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9oct_16_pageviews_andbarsTests.swift; sourceTree = "<group>"; };
+		1869B9DF1DC4A2B00044694D /* SomeTaxiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTaxiServiceTests.swift; sourceTree = "<group>"; };
 		1869B9E11DC4A2B00044694D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1869B9E61DC4A2B00044694D /* 29oct'16_pageviews_andbarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "29oct'16_pageviews_andbarsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1869B9EA1DC4A2B00044694D /* _9oct_16_pageviews_andbarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9oct_16_pageviews_andbarsUITests.swift; sourceTree = "<group>"; };
+		1869B9EA1DC4A2B00044694D /* SomeTaxiServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTaxiServiceUITests.swift; sourceTree = "<group>"; };
 		1869B9EC1DC4A2B00044694D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1869B9F81DC66FB70044694D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1869B9FA1DC6705C0044694D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188F23201DC7A83500DD62D5 /* SomeTaxiService.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomeTaxiService.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188F23211DC7A83500DD62D5 /* SomeTaxiService.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomeTaxiService.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		188F23221DC7A83500DD62D5 /* SomeTaxiService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeTaxiService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,60 +79,53 @@
 		1869B9BE1DC4A2AF0044694D = {
 			isa = PBXGroup;
 			children = (
-				1869B9C91DC4A2AF0044694D /* 29oct'16_pageviews_andbars */,
-				1869B9DE1DC4A2B00044694D /* 29oct'16_pageviews_andbarsTests */,
-				1869B9E91DC4A2B00044694D /* 29oct'16_pageviews_andbarsUITests */,
-				1869B9C81DC4A2AF0044694D /* Products */,
+				1869B9C91DC4A2AF0044694D /* SomeTaxiService */,
+				1869B9DE1DC4A2B00044694D /* SomeTaxiServiceTests */,
+				1869B9E91DC4A2B00044694D /* SomeTaxiServiceUITests */,
+				188F23201DC7A83500DD62D5 /* SomeTaxiService.xctest */,
+				188F23211DC7A83500DD62D5 /* SomeTaxiService.xctest */,
+				188F23221DC7A83500DD62D5 /* SomeTaxiService.app */,
 			);
 			sourceTree = "<group>";
 		};
-		1869B9C81DC4A2AF0044694D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1869B9C71DC4A2AF0044694D /* 29oct'16_pageviews_andbars.app */,
-				1869B9DB1DC4A2B00044694D /* 29oct'16_pageviews_andbarsTests.xctest */,
-				1869B9E61DC4A2B00044694D /* 29oct'16_pageviews_andbarsUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1869B9C91DC4A2AF0044694D /* 29oct'16_pageviews_andbars */ = {
+		1869B9C91DC4A2AF0044694D /* SomeTaxiService */ = {
 			isa = PBXGroup;
 			children = (
 				1869B9CA1DC4A2AF0044694D /* AppDelegate.swift */,
-				1869B9CC1DC4A2AF0044694D /* ViewController.swift */,
+				1869B9FA1DC6705C0044694D /* ViewController.swift */,
 				1869B9CE1DC4A2AF0044694D /* Main.storyboard */,
 				1869B9D11DC4A2B00044694D /* Assets.xcassets */,
 				1869B9D31DC4A2B00044694D /* LaunchScreen.storyboard */,
 				1869B9D61DC4A2B00044694D /* Info.plist */,
+				1869B9F81DC66FB70044694D /* TableViewController.swift */,
 			);
-			path = "29oct'16_pageviews_andbars";
+			path = SomeTaxiService;
 			sourceTree = "<group>";
 		};
-		1869B9DE1DC4A2B00044694D /* 29oct'16_pageviews_andbarsTests */ = {
+		1869B9DE1DC4A2B00044694D /* SomeTaxiServiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				1869B9DF1DC4A2B00044694D /* _9oct_16_pageviews_andbarsTests.swift */,
+				1869B9DF1DC4A2B00044694D /* SomeTaxiServiceTests.swift */,
 				1869B9E11DC4A2B00044694D /* Info.plist */,
 			);
-			path = "29oct'16_pageviews_andbarsTests";
+			path = SomeTaxiServiceTests;
 			sourceTree = "<group>";
 		};
-		1869B9E91DC4A2B00044694D /* 29oct'16_pageviews_andbarsUITests */ = {
+		1869B9E91DC4A2B00044694D /* SomeTaxiServiceUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1869B9EA1DC4A2B00044694D /* _9oct_16_pageviews_andbarsUITests.swift */,
+				1869B9EA1DC4A2B00044694D /* SomeTaxiServiceUITests.swift */,
 				1869B9EC1DC4A2B00044694D /* Info.plist */,
 			);
-			path = "29oct'16_pageviews_andbarsUITests";
+			path = SomeTaxiServiceUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1869B9C61DC4A2AF0044694D /* 29oct'16_pageviews_andbars */ = {
+		1869B9C61DC4A2AF0044694D /* SomeTaxiService */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1869B9EF1DC4A2B00044694D /* Build configuration list for PBXNativeTarget "29oct'16_pageviews_andbars" */;
+			buildConfigurationList = 1869B9EF1DC4A2B00044694D /* Build configuration list for PBXNativeTarget "SomeTaxiService" */;
 			buildPhases = (
 				1869B9C31DC4A2AF0044694D /* Sources */,
 				1869B9C41DC4A2AF0044694D /* Frameworks */,
@@ -140,14 +135,14 @@
 			);
 			dependencies = (
 			);
-			name = "29oct'16_pageviews_andbars";
-			productName = "29oct'16_pageviews_andbars";
-			productReference = 1869B9C71DC4A2AF0044694D /* 29oct'16_pageviews_andbars.app */;
+			name = SomeTaxiService;
+			productName = "29oct\'16_pageviews_andbars";
+			productReference = 188F23221DC7A83500DD62D5 /* SomeTaxiService.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1869B9DA1DC4A2B00044694D /* 29oct'16_pageviews_andbarsTests */ = {
+		1869B9DA1DC4A2B00044694D /* SomeTaxiServiceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1869B9F21DC4A2B00044694D /* Build configuration list for PBXNativeTarget "29oct'16_pageviews_andbarsTests" */;
+			buildConfigurationList = 1869B9F21DC4A2B00044694D /* Build configuration list for PBXNativeTarget "SomeTaxiServiceTests" */;
 			buildPhases = (
 				1869B9D71DC4A2B00044694D /* Sources */,
 				1869B9D81DC4A2B00044694D /* Frameworks */,
@@ -158,14 +153,14 @@
 			dependencies = (
 				1869B9DD1DC4A2B00044694D /* PBXTargetDependency */,
 			);
-			name = "29oct'16_pageviews_andbarsTests";
-			productName = "29oct'16_pageviews_andbarsTests";
-			productReference = 1869B9DB1DC4A2B00044694D /* 29oct'16_pageviews_andbarsTests.xctest */;
+			name = SomeTaxiServiceTests;
+			productName = "29oct\'16_pageviews_andbarsTests";
+			productReference = 188F23211DC7A83500DD62D5 /* SomeTaxiService.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1869B9E51DC4A2B00044694D /* 29oct'16_pageviews_andbarsUITests */ = {
+		1869B9E51DC4A2B00044694D /* SomeTaxiServiceUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1869B9F51DC4A2B00044694D /* Build configuration list for PBXNativeTarget "29oct'16_pageviews_andbarsUITests" */;
+			buildConfigurationList = 1869B9F51DC4A2B00044694D /* Build configuration list for PBXNativeTarget "SomeTaxiServiceUITests" */;
 			buildPhases = (
 				1869B9E21DC4A2B00044694D /* Sources */,
 				1869B9E31DC4A2B00044694D /* Frameworks */,
@@ -176,9 +171,9 @@
 			dependencies = (
 				1869B9E81DC4A2B00044694D /* PBXTargetDependency */,
 			);
-			name = "29oct'16_pageviews_andbarsUITests";
-			productName = "29oct'16_pageviews_andbarsUITests";
-			productReference = 1869B9E61DC4A2B00044694D /* 29oct'16_pageviews_andbarsUITests.xctest */;
+			name = SomeTaxiServiceUITests;
+			productName = "29oct\'16_pageviews_andbarsUITests";
+			productReference = 188F23201DC7A83500DD62D5 /* SomeTaxiService.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1869B9C21DC4A2AF0044694D /* Build configuration list for PBXProject "29oct'16_pageviews_andbars" */;
+			buildConfigurationList = 1869B9C21DC4A2AF0044694D /* Build configuration list for PBXProject "SomeTaxiService" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,13 +208,13 @@
 				Base,
 			);
 			mainGroup = 1869B9BE1DC4A2AF0044694D;
-			productRefGroup = 1869B9C81DC4A2AF0044694D /* Products */;
+			productRefGroup = 1869B9BE1DC4A2AF0044694D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1869B9C61DC4A2AF0044694D /* 29oct'16_pageviews_andbars */,
-				1869B9DA1DC4A2B00044694D /* 29oct'16_pageviews_andbarsTests */,
-				1869B9E51DC4A2B00044694D /* 29oct'16_pageviews_andbarsUITests */,
+				1869B9C61DC4A2AF0044694D /* SomeTaxiService */,
+				1869B9DA1DC4A2B00044694D /* SomeTaxiServiceTests */,
+				1869B9E51DC4A2B00044694D /* SomeTaxiServiceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,8 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1869B9CD1DC4A2AF0044694D /* ViewController.swift in Sources */,
+				1869B9FB1DC6705C0044694D /* ViewController.swift in Sources */,
 				1869B9CB1DC4A2AF0044694D /* AppDelegate.swift in Sources */,
+				1869B9F91DC66FB70044694D /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1869B9E01DC4A2B00044694D /* _9oct_16_pageviews_andbarsTests.swift in Sources */,
+				1869B9E01DC4A2B00044694D /* SomeTaxiServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1869B9EB1DC4A2B00044694D /* _9oct_16_pageviews_andbarsUITests.swift in Sources */,
+				1869B9EB1DC4A2B00044694D /* SomeTaxiServiceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +278,12 @@
 /* Begin PBXTargetDependency section */
 		1869B9DD1DC4A2B00044694D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1869B9C61DC4A2AF0044694D /* 29oct'16_pageviews_andbars */;
+			target = 1869B9C61DC4A2AF0044694D /* SomeTaxiService */;
 			targetProxy = 1869B9DC1DC4A2B00044694D /* PBXContainerItemProxy */;
 		};
 		1869B9E81DC4A2B00044694D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1869B9C61DC4A2AF0044694D /* 29oct'16_pageviews_andbars */;
+			target = 1869B9C61DC4A2AF0044694D /* SomeTaxiService */;
 			targetProxy = 1869B9E71DC4A2B00044694D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -399,10 +395,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "29oct'16_pageviews_andbars/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+				);
+				INFOPLIST_FILE = SomeTaxiService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-9oct-16-pageviews-andbars";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-omeTaxiService";
+				PRODUCT_NAME = SomeTaxiService;
 			};
 			name = Debug;
 		};
@@ -410,10 +410,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "29oct'16_pageviews_andbars/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+				);
+				INFOPLIST_FILE = SomeTaxiService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-9oct-16-pageviews-andbars";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-omeTaxiService";
+				PRODUCT_NAME = SomeTaxiService;
 			};
 			name = Release;
 		};
@@ -421,11 +425,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "29oct'16_pageviews_andbarsTests/Info.plist";
+				INFOPLIST_FILE = SomeTaxiService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-9oct-16-pageviews-andbarsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/29oct'16_pageviews_andbars.app/29oct'16_pageviews_andbars";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-omeTaxiService";
+				PRODUCT_NAME = SomeTaxiService;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SomeTaxiService.app/SomeTaxiService";
 			};
 			name = Debug;
 		};
@@ -433,22 +437,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "29oct'16_pageviews_andbarsTests/Info.plist";
+				INFOPLIST_FILE = SomeTaxiService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-9oct-16-pageviews-andbarsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/29oct'16_pageviews_andbars.app/29oct'16_pageviews_andbars";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-omeTaxiService";
+				PRODUCT_NAME = SomeTaxiService;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SomeTaxiService.app/SomeTaxiService";
 			};
 			name = Release;
 		};
 		1869B9F61DC4A2B00044694D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "29oct'16_pageviews_andbarsUITests/Info.plist";
+				INFOPLIST_FILE = SomeTaxiService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-9oct-16-pageviews-andbarsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "29oct'16_pageviews_andbars";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-omeTaxiServiceUITests";
+				PRODUCT_NAME = SomeTaxiService;
+				TEST_TARGET_NAME = "29oct\'16_pageviews_andbars";
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -456,11 +460,11 @@
 		1869B9F71DC4A2B00044694D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "29oct'16_pageviews_andbarsUITests/Info.plist";
+				INFOPLIST_FILE = SomeTaxiService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-9oct-16-pageviews-andbarsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "29oct'16_pageviews_andbars";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gafurov.id.-omeTaxiServiceUITests";
+				PRODUCT_NAME = SomeTaxiService;
+				TEST_TARGET_NAME = "29oct\'16_pageviews_andbars";
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -468,7 +472,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1869B9C21DC4A2AF0044694D /* Build configuration list for PBXProject "29oct'16_pageviews_andbars" */ = {
+		1869B9C21DC4A2AF0044694D /* Build configuration list for PBXProject "SomeTaxiService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1869B9ED1DC4A2B00044694D /* Debug */,
@@ -477,29 +481,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1869B9EF1DC4A2B00044694D /* Build configuration list for PBXNativeTarget "29oct'16_pageviews_andbars" */ = {
+		1869B9EF1DC4A2B00044694D /* Build configuration list for PBXNativeTarget "SomeTaxiService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1869B9F01DC4A2B00044694D /* Debug */,
 				1869B9F11DC4A2B00044694D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		1869B9F21DC4A2B00044694D /* Build configuration list for PBXNativeTarget "29oct'16_pageviews_andbarsTests" */ = {
+		1869B9F21DC4A2B00044694D /* Build configuration list for PBXNativeTarget "SomeTaxiServiceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1869B9F31DC4A2B00044694D /* Debug */,
 				1869B9F41DC4A2B00044694D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		1869B9F51DC4A2B00044694D /* Build configuration list for PBXNativeTarget "29oct'16_pageviews_andbarsUITests" */ = {
+		1869B9F51DC4A2B00044694D /* Build configuration list for PBXNativeTarget "SomeTaxiServiceUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1869B9F61DC4A2B00044694D /* Debug */,
 				1869B9F71DC4A2B00044694D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

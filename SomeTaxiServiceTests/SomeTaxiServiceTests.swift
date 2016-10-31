@@ -1,15 +1,15 @@
 //
-//  _9oct_16_pageviews_andbarsTests.swift
-//  29oct'16_pageviews_andbarsTests
+//  SomeTaxiServiceTests.swift
+//  SomeTaxiServiceTests
 //
 //  Created by Nik on 29.10.16.
 //  Copyright © 2016 Gafurov. All rights reserved.
 //
 
 import XCTest
-@testable import _9oct_16_pageviews_andbars
+@testable import SomeTaxiServiceTest
 
-class _9oct_16_pageviews_andbarsTests: XCTestCase {
+class SomeTaxiServiceTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

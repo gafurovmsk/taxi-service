@@ -8,7 +8,7 @@
 
 import XCTest
 
-class _9oct_16_pageviews_andbarsUITests: XCTestCase {
+class SomeTaxiServiceUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
