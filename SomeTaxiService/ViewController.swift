@@ -1,29 +1,157 @@
 //
 //  ViewController.swift
-//  29oct'16_pageviews_andbars
+//  SomeTaxiService
 //
 //  Created by Nik on 30.10.16.
 //  Copyright © 2016 Gafurov. All rights reserved.
 //
 
 import UIKit
-//import SwiftyJSON
+import SwiftyJSON
 
-
-class ViewController: UIViewController, UITableViewDataSource {
-
-    
-    
-    
-    let serverQueueList = [ "first thing", "secondThing", "other shut","already tired","ok, that's eniugh"]
-    
-    let serverRequestIDs = ["14512","3412","5122","31251","7473"]
-    
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var queueListTableview: UITableView!
     
+    // данные от запросов хранятся в них. Они необходимы для формирования таблиц
+    //var numberOfRequests: Int?
+    var requestList :[Request] = []
+    
+    
+    enum Action: String {
+        case GET_LIST="Action=GET_LIST"
+        case GET_INFO="Action=GET_INFO"
+        
+    }
+    
+    
+    //MARK: request forming
+    
+    func postRequest (requestPart: String, field:String) {
+        
+
+        // здесь прописаны входные данные авторизации:
+        // авторизацию, при необходимости можно добавить, а это данные отправить
+        // сюда через segue или тп способом ( например в виде tuple cо след атрибутами)
+        let ApiKey = "ApiKey=e8e6a311d54985a067ece5a008da280a"
+        let Login = "Login=d_blinov"
+        let Password = "Password=Passw0rd"
+        let ObjectCode = "ObjectCode=300"
+        // общая неизменяемая часть
+        
+        // формирования запроса
+        let postString = NSString(format: "%@&%@&%@&%@&%@&%@", ApiKey,Login,Password,ObjectCode,requestPart,field)
+        
+        let atrinityURL = NSURL( string: "http://mobile.atrinity.ru/api/service")
+        let request = NSMutableURLRequest(URL: atrinityURL!)
+        request.HTTPMethod = "POST"
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+            data, response, error in
+            if error != nil && data == nil {
+                print("Something is going wrong!! - \(error)")
+                return
+            }
+            
+            // сюда можно добавить try-catch условие, для обработки неправильно
+            // форматированных ответов
+            
+            // здесь лучше вызывать отдельную функцию парсинга
+        
+                self.parseJSON(data)
+            
+            
+            
+            
+            
+        }.resume()
+        
+        
+    }
+    
+    
+    //MARK: requestList parser
+    
+    func parseJSON (data: NSData?) {
+        // функция для получения данных первого tableview
+        
+        let readableJSON = JSON(data: data!)
+        // self.numberOfRequests = readableJSON.count
+        
+        
+        for ind in 0 ..< readableJSON.count
+        {
+            
+            let requestTemp = Request()
+            
+            requestTemp.name = readableJSON[ind]["Name"].string
+            requestTemp.requestNumber = readableJSON[ind]["RequestNumber"].string
+            requestTemp.requestID = readableJSON[ind]["RequestID"].string
+            requestTemp.createdAt = readableJSON[ind]["CreatedAt"].string
+            
+            requestList.append(requestTemp)
+            
+            
+        //  let field = "Fields[RequestID]" + requestList[ind].requestID!
+            
+            //self.postRequest(Action.GET_INFO.rawValue, field: field, parser: self.parseDetailsJSON)
+            
+            
+          
+
+            
+            
+        }
+        
+        dispatch_async(dispatch_get_main_queue()) {
+                    self.queueListTableview.reloadData()
+            
+               }
+        
+    }
+    
+    
+    
+    //MARK: detailsList parser - нужно переставить его в след view
+    func parseDetailsJSON (data: NSData? , currentReq: Request?) {
+        
+        let detailsJSON = JSON(data: data!)
+        
+        
+        
+        for ind in 0 ..< detailsJSON.count
+        {
+            
+            let requestTemp = Details()
+            
+            requestTemp.statusText = detailsJSON[ind]["StatusText"].string
+            requestTemp.fullName = detailsJSON[ind]["FullName"].string
+            requestTemp.description = detailsJSON[ind]["Description"].string
+            requestTemp.solutionDescription = detailsJSON[ind]["SolutionDescription"].string
+            requestTemp.createdAt = detailsJSON[ind]["CreatedAt"].string
+            
+            
+            currentReq!.details = requestTemp
+            
+        }
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            self.queueListTableview.reloadData()
+            
+        }
+        
+
+        
+        
+    }
+   
+    
+    
+    //MARK: constructing tableview
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return serverQueueList.count
+        return requestList.count ?? 0
     }
     
     
@@ -34,71 +162,48 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // initializing new cell
-        let requestListCell:UITableViewCell = queueListTableview.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath) 
-        // prototype1 - идентификатор ячейки: мы можем настроить ячейку как нам
+        
+        let ourCustomCell = queueListTableview.dequeueReusableCellWithIdentifier("customCell", forIndexPath: indexPath) as! CustomCell
+       
+        
+        // customCell - идентификатор ячейки: мы можем настроить ячейку как нам
         // хочется и обозначить его идентификатор таким образом
         // это сэкономит время на оформлении ячейки
         
-        // adding some text and Name/ RequestNumber / creatiedAt
-        requestListCell.textLabel?.text = serverRequestIDs[indexPath.row] + " : " + serverQueueList[indexPath.row]
-        //requestListCell.
         
-        return requestListCell
+        // adding some text and Name/ RequestNumber / creatiedAt
+        
+        ourCustomCell.requestNumber.text =  requestList[indexPath.row].requestNumber!
+        
+        ourCustomCell.name.text = requestList[indexPath.row].name!
+        
+        ourCustomCell.createdAt.text = requestList[indexPath.row].createdAt!
+    
+        
+        
+        return ourCustomCell
     }
     
     
 
     
+    
+    
+   //MARK: viewDidload
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
 
+    
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // здесь прописаны входные данные авторизации:
-        // авторизацию, при необходимости можно добавить, а это данные отправить
-        // сюда через segue или тп способом ( например в виде tuple cо след атрибутами)
+        // НУЖНО ВОТКНУТЬ ЭТО КУДА НИБУДЬ
+        let field = "Fields[FilterID]=3CD0E650-4B81-E511-A39A-1CC1DEAD694D"
         
-        let requestURL = NSURL( string: "http://mobile.atrinity.ru/api/service")
-        let request = NSMutableURLRequest(URL: requestURL!)
-        request.HTTPMethod = "POST"
-        
-        let ApiKey = "ApiKey=e8e6a311d54985a067ece5a008da280a"
-        let Login = "Login=d_blinov"
-        let Password = "Password=Passw0rd"
-        let ObjectCode = "ObjectCode=300"
-        let Action = "Action=GET_LIST"
-        //Строка {field1: value1, field2: value2, …} Сериализованный массив в формате JSON, содержащий названия и значения для полей заявки Fields[FilterID]=3CD0E650-4B81-E511-A39A-1CC1DEAD694D
-        let Fields = "Fields=3CD0E650-4B81-E511-A39A-1CC1DEAD694D"
-        
-        
-        let postString = ApiKey+"&"+Login+"&"+Password+"&"+ObjectCode+"&"+Action+"&"+Fields
-        
-        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
-        
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
-            data, response, error in
-            if error != nil && data == nil {
-                print("Something is going wrong!! - \(error)")
-                return 
-            }
-          
-            // checking response
-            // content length in correct request is 99
-            print("RESPONSE!!!")
-            print(response)
-            
-           // let readableJSON = JSON(data: data!,options: NSJSONReadingOptions.MutableContainers, error: nil)
-           
-            
-           // readableJSON
-            
-        }
-        
-        
-        task.resume()
-        
+        postRequest(Action.GET_LIST.rawValue,field: field)
+    
+        // Отображение
         queueListTableview.dataSource = self
-        
         
     }
 
@@ -108,14 +213,19 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
 
-    /*
-    // MARK: - Navigation
+    
+    
+       // MARK: - SEgue for detailTableview
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+           
+        //var indexPath: NSIndexPath = (sender?.indexPathForSelectedRow)!
+            
+        var destinationViewController = segue.destinationViewController as! TableViewController
+            
+        
+            
     }
-    */
+
 
 }
