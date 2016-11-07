@@ -22,7 +22,15 @@ class Details {
     var fullName: String?
     var description: String?
     var solutionDescription: String? // возможность редактирования
+    var SLARecoveryTime:String?
     var createdAt: String?
     var actualRecoveryTime: String?
 
 }
+
+enum Action: String {
+    case GET_LIST="Action=GET_LIST"
+    case GET_INFO="Action=GET_INFO"
+    
+}
+
